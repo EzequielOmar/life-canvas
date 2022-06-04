@@ -1,0 +1,43 @@
+{
+  "name": "life-canvas",
+  "version": "1.0.0",
+  "description": "Conway's game of life made to run on canvas HTML",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-mocha -p tsconfig.json test/*.ts",
+    "autotest": "ts-mocha -p tsconfig.json test/*.ts -w --watch-files '**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequielOmar/life-canvas.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "canvas",
+    "conway's",
+    "life",
+    "game",
+    "TDD",
+    "Jest"
+  ],
+  "author": "EzequielOmar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzequielOmar/life-canvas/issues"
+  },
+  "homepage": "https://github.com/EzequielOmar/life-canvas#readme",
+  "dependencies": {
+    "typescript": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "jsdom": "^19.0.0",
+    "mocha": "^10.0.0",
+    "ts-mocha": "^10.0.0"
+  }
+}
